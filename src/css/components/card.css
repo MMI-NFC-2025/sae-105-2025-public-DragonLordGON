@@ -1,0 +1,142 @@
+/* Date Card Component */
+.dates-section {
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dates-section__title {
+  font-size: var(--font-size-titre-s);
+  color: var(--primary-red);
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.date-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.date-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.date-card__icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.date-card__date {
+  font-size: var(--font-size-card-title);
+  color: var(--primary-red);
+  margin-bottom: 0.5rem;
+}
+
+.date-card__subtext {
+  font-size: var(--font-size-texte-m);
+  color: var(--carddesc-color);
+  margin-bottom: 0.5rem;
+}
+
+.date-card__time {
+  font-size: var(--font-size-texte-m);
+  color: var(--carddesc-color);
+  font-weight: 600;
+}
+
+/* Discovery Section */
+.discovery-section {
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.discovery-section__title {
+  font-size: var(--font-size-titre-s);
+  color: var(--primary-red);
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.discovery-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.discovery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.discovery-card__image {
+  width: 100%;
+  height: 200px;
+  background: var(--gradient-orange-to-yellow);
+}
+
+.discovery-card__content {
+  padding: 1.5rem;
+}
+
+.discovery-card__title {
+  font-size: var(--font-size-card-title);
+  color: var(--primary-red);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.discovery-card__description {
+  font-size: var(--font-size-card-desc);
+  color: var(--carddesc-color);
+}
+
+/* Reservation Section */
+.reservation-section {
+  background: var(--gradient-orange-to-yellow);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: var(--white);
+  margin: 2rem 0;
+}
+
+.reservation-section__title {
+  font-size: var(--font-size-titre-s);
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.reservation-section__subtitle {
+  font-size: var(--font-size-texte-m);
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .dates-section,
+  .discovery-section {
+    padding: 2rem 1rem;
+  }
+
+  .date-card,
+  .discovery-card {
+    margin-bottom: 1rem;
+  }
+
+  .reservation-section {
+    padding: 2rem 1rem;
+  }
+}

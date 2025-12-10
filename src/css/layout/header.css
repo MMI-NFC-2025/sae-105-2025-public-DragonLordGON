@@ -1,11 +1,52 @@
 .header {
-  position: absolute;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--primary-red);
+  padding: 1rem 1.5rem;
 }
-.header__link {
 
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .header__logo {
-
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
+
+.header__logo img {
+  height: 100%;
+  width: auto;
+}
+
+.header__menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.header__menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+.header__menu-toggle:hover span {
+  background-color: var(--secondary-yellow);
+}
+
 
