@@ -73,6 +73,29 @@
   border: 2px solid transparent;
 }
 
+.button--primary {
+  flex: 1 0 0;
+  font-family: "Bebas Neue";
+  font-size: 1.2rem !important;
+  font-style: normal;
+  font-weight: 200;
+  color: #FF5733;
+  width: 100%;
+}
+.button--primary:hover {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  transform: translateY(-4px);
+}
+
+.button--primary:hover .reservation-section__heart {
+  color: var(--white);
+}
+
+.button--primary:hover .reservation-section__heart img {
+  filter: brightness(0) invert(1);
+}
+
 /* Carousel */
 .carousel {
     position: relative;

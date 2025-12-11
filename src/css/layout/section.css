@@ -21,3 +21,23 @@ section + section {
     padding: 0 1rem;
   }
 }
+
+.partners__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.partners__logos img {
+  max-width: 150px;
+  height: auto;
+}
+
+.partner__title {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--primary-orange);
+  font-size: 2rem;
+  font-weight: 200;
+}

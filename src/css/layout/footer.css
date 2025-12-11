@@ -33,18 +33,6 @@
   text-transform: uppercase;
 }
 
-.footer__partner-logo {
-  max-width: 150px;
-  height: auto;
-}
-
-.footer__partners {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 .footer__links {
   margin-bottom: 2rem;
 }
