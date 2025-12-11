@@ -29,5 +29,8 @@
   --secondary-yellow: #ffd966;
   --dark-gray: #2a2a2a;
   --light-gray: #f5f5f5;
+  --beige: #f7f0e6;
+  --hero-gradient: linear-gradient(180deg, #ff5a2b 0%, #ff7f36 45%, #ffd774 100%);
+  --card-gradient: linear-gradient(180deg, #ff6b35 0%, #ff9a3c 65%, #fff 65%, #fff 100%);
   --gradient-orange-to-yellow: linear-gradient(135deg, #ff6b35 0%, #ffd966 100%);
 }

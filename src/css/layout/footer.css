@@ -6,9 +6,8 @@
 }
 
 .footer__content {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  max-width: 440px;
+  margin: 0 auto 2rem;
 }
 
 .footer__logo {
@@ -37,6 +36,13 @@
 .footer__partner-logo {
   max-width: 150px;
   height: auto;
+}
+
+.footer__partners {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .footer__links {

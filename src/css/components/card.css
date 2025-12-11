@@ -1,8 +1,9 @@
 /* Date Card Component */
 .dates-section {
-  padding: 3rem 1.5rem;
-  max-width: 1200px;
+  padding: 3rem 1.5rem 2rem;
+  max-width: 440px;
   margin: 0 auto;
+  background: var(--beige);
 }
 
 .dates-section__title {
@@ -15,10 +16,10 @@
 
 .date-card {
   background: var(--white);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.25rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
   text-align: center;
 }
@@ -30,7 +31,8 @@
 
 .date-card__icon {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-red);
 }
 
 .date-card__date {
@@ -53,9 +55,10 @@
 
 /* Discovery Section */
 .discovery-section {
-  padding: 3rem 1.5rem;
-  max-width: 1200px;
+  padding: 3rem 1.5rem 2rem;
+  max-width: 440px;
   margin: 0 auto;
+  background: var(--beige);
 }
 
 .discovery-section__title {
@@ -68,10 +71,10 @@
 
 .discovery-card {
   background: var(--white);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
 }
 
@@ -82,12 +85,23 @@
 
 .discovery-card__image {
   width: 100%;
-  height: 200px;
-  background: var(--gradient-orange-to-yellow);
+  height: 180px;
+  background: var(--card-gradient);
+  position: relative;
+}
+
+.discovery-card__image::after {
+  content: "";
+  position: absolute;
+  inset: 10% 12% 30% 12%;
+  background: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.2) 0, transparent 40%),
+              radial-gradient(circle at 70% 45%, rgba(255,255,255,0.2) 0, transparent 42%);
+  pointer-events: none;
 }
 
 .discovery-card__content {
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+  background: var(--white);
 }
 
 .discovery-card__title {
@@ -108,7 +122,10 @@
   padding: 3rem 1.5rem;
   text-align: center;
   color: var(--white);
-  margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 440px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
 }
 
 .reservation-section__title {

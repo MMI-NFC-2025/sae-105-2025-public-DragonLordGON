@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="Mode 1">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FANFA COMTOISE - Festival Gratuit Fanfare et Jazz</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/fanfa.svg" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Fanfa comtoise" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="assets/icons/logo.svg" alt="FANFA COMTOISE">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
             </div>
             <button class="header__menu-toggle" aria-label="Menu">
                 <span></span>
@@ -21,15 +30,24 @@
         </div>
     </header>
 
-    <!-- Main -->
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="hero__content">
                 <h1 class="hero__title">FANFA COMTOISE</h1>
                 <p class="hero__subtitle">Festival gratuit fanfare et jazz</p>
                 <p class="hero__description">3 jours de musiques gratuits à montbeliard</p>
-                <button class="button button--primary">Voir le programme</button>
+                <button class="button button--book">
+                    <span class="button__icon" aria-hidden="true">
+                        <img src="assets/icons/billet.svg" alt="">
+                    </span>
+                    <span class="button__label">Réservez votre billet</span>
+                </button>
+                <br></br>
+                <button class="button button--program">Voir le programme</button>
+                <br></br>
+                <div class="hero__placeholder">
+                    <img src="assets/img/placeholder img.webp" alt="Festival illustration">
+                </div>
             </div>
         </section>
 
@@ -106,12 +124,15 @@
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__logo">
-                <img src="assets/icons/logo-footer.svg" alt="FANFA COMTOISE">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__title">Région Bourgogne-Franche-Comté</h3>
-                <img src="assets/icons/partenaire-logo.svg" alt="Partenaire" class="footer__partner-logo">
+                <h3 class="footer__title">Nos partenaires</h3>
+                <div class="footer__partners">
+                    <img src="assets/img/montbelogo.webp" alt="Ville de Montbéliard" class="footer__partner-logo">
+                    <img src="assets/img/regionbfg.webp" alt="Région Bourgogne Franche-Comté" class="footer__partner-logo">
+                </div>
             </div>
 
             <div class="footer__links">
