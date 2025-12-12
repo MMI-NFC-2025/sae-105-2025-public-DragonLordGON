@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="Mode 1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme - FANFA COMTOISE</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/fanfa.svg" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Fanfa comtoise" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!--Menu-->
+    <nav class="menu" id="mobileMenu">
+        <div class="menu__content">
+            <div class="menu__header">
+                <div class="menu__logo">
+                    <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+                </div>
+                <button class="menu__close" aria-label="Fermer le menu">
+                    <span>&times;</span>
+                </button>
+            </div>
+            
+            <ul class="menu__nav">
+                <li><a href="index.html" class="menu__link">Accueil</a></li>
+                <li><a href="festival.html" class="menu__link">Le festival</a></li>
+                <li><a href="programme.html" class="menu__link">Programme</a></li>
+                <li><a href="artistes.html" class="menu__link">Artistes</a></li>
+                <li><a href="#scenes" class="menu__link">Scènes</a></li>
+                <li><a href="#infos" class="menu__link">Infos pratiques</a></li>
+                <li><a href="#contact" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu__footer">
+            <p class="menu__dates">27, 28, 29 juin 2026</p>
+            <p class="menu__location">Montbéliard - Entrée gratuite</p>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="programme-hero">
+            <h1 class="programme-hero__title">PROGRAMME</h1>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="filters-section">
+            <div class="filters__container">
+                <h2 class="filters__title">Sélectionner le programme ciblé</h2>
+                
+                <div class="filters__controls">
+                    <div class="filter-group">
+                        <button class="filter-btn" id="jourFilter">
+                            <img src="assets/icons/calendrier.svg" alt="Calendrier">
+                            <span>Jour</span>
+                        </button>
+                        <div class="filter-dropdown" id="jourDropdown">
+                            <button class="filter-option" data-filter="jour" data-value="all">Tous les jours</button>
+                            <button class="filter-option" data-filter="jour" data-value="samedi">Samedi 27</button>
+                            <button class="filter-option" data-filter="jour" data-value="dimanche">Dimanche 28</button>
+                            <button class="filter-option" data-filter="jour" data-value="lundi">Lundi 29</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-btn" id="sceneFilter">
+                            <img src="assets/icons/location.svg" alt="Scène">
+                            <span>Scène</span>
+                        </button>
+                        <div class="filter-dropdown" id="sceneDropdown">
+                            <button class="filter-option" data-filter="scene" data-value="all">Toutes les scènes</button>
+                            <button class="filter-option" data-filter="scene" data-value="grande">Grande scène</button>
+                            <button class="filter-option" data-filter="scene" data-value="gazebo">Gazebo</button>
+                            <button class="filter-option" data-filter="scene" data-value="proximite">Scène de proximité</button>
+                        </div>
+                    </div>
+
+                    <button class="filter-btn filter-btn--main" id="applyFilters">
+                        <img src="assets/icons/filtre.svg" alt="Filtrer">
+                        <span>Filtrer le programme</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programme Content -->
+        <section class="programme-content">
+            <div class="programme-content__container">
+                
+                <!-- Samedi 27 juin -->
+                <div class="day-section" data-day="samedi">
+                    <h2 class="day-section__title">Samedi 27 juin 2026</h2>
+                    
+                    <div class="concert-card" data-day="samedi" data-scene="grande" data-genre="brass-band">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Beacon Brass Band</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    19:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Grande scène
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Brass Band</span>
+                        </div>
+                    </div>
+
+                    <div class="concert-card" data-day="samedi" data-scene="proximite" data-genre="jazz-collectif">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">New Orleans Jazz Collective</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    21:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Scène de proximité
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">New Orleans Jazz Collective</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dimanche 28 juin -->
+                <div class="day-section" data-day="dimanche">
+                    <h2 class="day-section__title">Dimanche 28 juin 2026</h2>
+                    
+                    <div class="concert-card" data-day="dimanche" data-scene="gazebo" data-genre="fanfare">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Fanfare Comtoise</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    13:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Gazebo
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Fanfare</span>
+                        </div>
+                    </div>
+
+                    <div class="concert-card" data-day="dimanche" data-scene="grande" data-genre="brass-band">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Trombone Brass Band</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    15:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Grande scène
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Brass Band</span>
+                        </div>
+                    </div>
+
+                    <div class="concert-card" data-day="dimanche" data-scene="proximite" data-genre="brass-band">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Bagel Brass</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    17:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Scène de proximité
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Brass Band</span>
+                        </div>
+                    </div>
+
+                    <div class="concert-card" data-day="dimanche" data-scene="proximite" data-genre="jazz">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Jazz Super Mara Band</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    19:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Scène de proximité
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Jazz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lundi 29 juin -->
+                <div class="day-section" data-day="lundi">
+                    <h2 class="day-section__title">Lundi 29 juin 2026</h2>
+                    
+                    <div class="concert-card" data-day="lundi" data-scene="grande" data-genre="funk">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Lucky Chops</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    14:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Grande scène
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Funk</span>
+                        </div>
+                    </div>
+
+                    <div class="concert-card" data-day="lundi" data-scene="proximite" data-genre="brass-band">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Balkys</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    16:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Scène de proximité
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Brass Band</span>
+                        </div>
+                    </div>
+
+                    <div class="concert-card" data-day="lundi" data-scene="proximite" data-genre="funk">
+                        <div class="concert-card__header"></div>
+                        <div class="concert-card__content">
+                            <h3 class="concert-card__title">Tuba Skinny</h3>
+                            <div class="concert-card__meta">
+                                <span class="concert-card__time">
+                                    <img src="assets/icons/horloge.svg" alt="Heure">
+                                    18:00
+                                </span>
+                                <span class="concert-card__location">
+                                    <img src="assets/icons/location.svg" alt="Lieu">
+                                    Scène de proximité
+                                </span>
+                            </div>
+                            <span class="concert-card__genre">Funk</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <div class="footer__sub">Festival gratuit de fanfare et jazz à montbéliard</div>
+            <div class="footer__section">
+            </div>
+            <div class="footer__sectionTitle">NAVIGATION</div>
+            <div class="footer__navlinks">
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="festival.html">Le festival</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                    <li><a href="#scenes">Scènes</a></li>
+                    <li><a href="#infos">Infos pratiques</a></li>
+                </ul>
+            </div>
+            <div class="footer__contactTitle">CONTACT</div>
+            <div class="footer__contactlinks">
+                <ul>
+                    <li><a href="mailto:contact@fanfacomtoise.fr">Contact@fanfacomtoise.fr</a></li>
+                    <li><a href="https://share.google/02XjEhGVNjn2FSbxy">montbéliard,france</a></li>
+                    <li><a href="calendarlink">27, 28, 29 juin 2026</a></li>
+                    <li>Entrée gratuite</li>
+                    <li>Tous publics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Fanfa Comtoise - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/programme.js"></script>
+</body>
+</html>

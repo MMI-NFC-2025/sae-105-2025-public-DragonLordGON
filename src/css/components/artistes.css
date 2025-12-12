@@ -1,0 +1,321 @@
+/* ============================================
+   ARTISTES PAGE - HERO SECTION
+   ============================================ */
+
+.artistes-hero {
+    background: var(--hero-gradient);
+    padding: 6rem 1.5rem 3rem;
+    margin-top: 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.artistes-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('../../../assets/icons/note.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.artistes-hero__content {
+    position: relative;
+    z-index: 1;
+}
+
+.artistes-hero__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* ============================================
+   ARTISTES PAGE - INTRO SECTION
+   ============================================ */
+
+.artistes-intro {
+    padding: 3rem 1.5rem;
+    background-color: var(--beige);
+}
+
+.artistes-intro__container {
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.artistes-intro__text {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    margin: 0;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* ============================================
+   ARTISTES PAGE - CAROUSEL SECTION
+   ============================================ */
+
+.artistes-carousel {
+    padding: 3rem 1.5rem;
+    background-color: var(--beige);
+}
+
+.artistes-carousel__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Artist Card */
+.artist-card {
+    min-width: 100%;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card__background {
+    height: 250px;
+    background: var(--gradient-orange-to-yellow);
+    position: relative;
+    overflow: hidden;
+}
+
+.artist-card__background::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-image: url('../../../assets/icons/note.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.artist-card__content {
+    padding: 2rem 1.5rem;
+}
+
+.artist-card__genre {
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-orange);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.artist-card__name {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: var(--primary-red);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.2;
+}
+
+.artist-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.artist-card__detail {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--primary-orange);
+}
+
+.artist-card__detail img {
+    width: 20px;
+    height: 20px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+/* Carousel Arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-orange);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-arrow:hover {
+    background-color: var(--primary-red);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-arrow span {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.carousel-arrow--prev {
+    left: -25px;
+}
+
+.carousel-arrow--next {
+    right: -25px;
+}
+
+/* Carousel Pagination Dots */
+.carousel-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.carousel-dot:hover {
+    background-color: var(--primary-orange);
+    transform: scale(1.2);
+}
+
+.carousel-dot--active {
+    background-color: var(--primary-orange);
+    width: 14px;
+    height: 14px;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET AND DESKTOP
+   ============================================ */
+
+@media (min-width: 768px) {
+    .artistes-hero {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .artistes-hero__title {
+        font-size: 4rem;
+    }
+
+    .artistes-hero::before {
+        width: 400px;
+        height: 400px;
+    }
+
+    .artistes-intro {
+        padding: 4rem 2rem;
+    }
+
+    .artistes-intro__text {
+        font-size: 1.75rem;
+    }
+
+    .artistes-carousel {
+        padding: 4rem 2rem;
+    }
+
+    .carousel-wrapper {
+        max-width: 500px;
+    }
+
+    .artist-card__background {
+        height: 300px;
+    }
+
+    .artist-card__background::before {
+        width: 250px;
+        height: 250px;
+    }
+
+    .artist-card__content {
+        padding: 2.5rem 2rem;
+    }
+
+    .artist-card__name {
+        font-size: 2.5rem;
+    }
+
+    .carousel-arrow {
+        width: 60px;
+        height: 60px;
+    }
+
+    .carousel-arrow span {
+        font-size: 2rem;
+    }
+
+    .carousel-arrow--prev {
+        left: -30px;
+    }
+
+    .carousel-arrow--next {
+        right: -30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-wrapper {
+        max-width: 600px;
+    }
+
+    .carousel-arrow--prev {
+        left: calc((100% - 600px) / 2 - 80px);
+    }
+
+    .carousel-arrow--next {
+        right: calc((100% - 600px) / 2 - 80px);
+    }
+}

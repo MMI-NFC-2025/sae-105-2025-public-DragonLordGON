@@ -1,0 +1,289 @@
+/* Programme Page Styles */
+
+/* Hero Section */
+.programme-hero {
+  background: var(--hero-gradient);
+  padding: 6rem 1.5rem 3rem;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.programme-hero__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+/* Filters Section */
+.filters-section {
+  padding: 2rem 1.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--beige);
+}
+
+.filters__container {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filters__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  color: var(--primary-red);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.filters__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-group {
+  position: relative;
+}
+
+.filter-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  border: 2px solid var(--primary-orange);
+  border-radius: 8px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.filter-btn:hover {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+.filter-btn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.filter-btn--main {
+  background: var(--primary-orange);
+  color: var(--white);
+  border: none;
+}
+
+.filter-btn--main img {
+  filter: brightness(0) invert(1);
+}
+
+.filter-btn--main:hover {
+  background: var(--primary-red);
+  transform: translateY(-2px);
+}
+
+.filter-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.filter-dropdown.active {
+  display: block;
+}
+
+.filter-option {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  border: none;
+  border-bottom: 1px solid var(--beige);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-option:last-child {
+  border-bottom: none;
+}
+
+.filter-option:hover {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+.filter-option.selected {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+/* Programme Content */
+.programme-content {
+  padding: 2rem 1.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--beige);
+}
+
+.programme-content__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Day Section */
+.day-section {
+  transition: all 0.3s ease;
+}
+
+.day-section.hidden {
+  display: none;
+}
+
+.day-section__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Concert Card */
+.concert-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.concert-card.hidden {
+  display: none;
+}
+
+.concert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.concert-card__header {
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-yellow) 100%);
+  position: relative;
+}
+
+.concert-card__content {
+  padding: 1.5rem;
+}
+
+.concert-card__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.concert-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.concert-card__time,
+.concert-card__location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  color: var(--primary-orange);
+  letter-spacing: 0.05em;
+}
+
+.concert-card__time img,
+.concert-card__location img {
+  width: 18px;
+  height: 18px;
+}
+
+.concert-card__genre {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--secondary-yellow);
+  border-radius: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .programme-hero {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .programme-hero__title {
+    font-size: 2.5rem;
+  }
+
+  .filters-section,
+  .programme-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .filters__container {
+    padding: 1rem;
+  }
+}
+
+/* Animation for filtered items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.concert-card.show {
+  animation: fadeIn 0.3s ease forwards;
+}

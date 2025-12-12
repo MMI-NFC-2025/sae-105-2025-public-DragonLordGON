@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="Mode 1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistes - FANFA COMTOISE</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/fanfa.svg" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Fanfa comtoise" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!--Menu-->
+    <nav class="menu" id="mobileMenu">
+        <div class="menu__content">
+            <div class="menu__header">
+                <div class="menu__logo">
+                    <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+                </div>
+                <button class="menu__close" aria-label="Fermer le menu">
+                    <span>&times;</span>
+                </button>
+            </div>
+            
+            <ul class="menu__nav">
+                <li><a href="index.html" class="menu__link">Accueil</a></li>
+                <li><a href="festival.html" class="menu__link">Le festival</a></li>
+                <li><a href="programme.html" class="menu__link">Programme</a></li>
+                <li><a href="artistes.html" class="menu__link">Artistes</a></li>
+                <li><a href="#scenes" class="menu__link">Scènes</a></li>
+                <li><a href="#infos" class="menu__link">Infos pratiques</a></li>
+                <li><a href="#contact" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu__footer">
+            <p class="menu__dates">27, 28, 29 juin 2025</p>
+            <p class="menu__location">Montbéliard - Entrée gratuite</p>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="artistes-hero">
+            <div class="artistes-hero__content">
+                <h1 class="artistes-hero__title">LES ARTISTES</h1>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="artistes-intro">
+            <div class="artistes-intro__container">
+                <p class="artistes-intro__text">Découvrez tous les artistes qui se produiront lors du festival</p>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section class="artistes-carousel">
+            <div class="artistes-carousel__container">
+                <button class="carousel-arrow carousel-arrow--prev" aria-label="Artiste précédent">
+                    <span>&lt;</span>
+                </button>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        
+                        <!-- Artist Card 1 - Template -->
+                        <div class="artist-card" data-index="0">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">JAZZ</span>
+                                <h3 class="artist-card__name">New Orleans Jazz Collective</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Samedi 27 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>21:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Scène du château</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 2 - Template -->
+                        <div class="artist-card" data-index="1">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">BRASS BAND</span>
+                                <h3 class="artist-card__name">Beacon Brass Band</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Samedi 27 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>19:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Grande scène</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 3 - Template -->
+                        <div class="artist-card" data-index="2">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">FANFARE</span>
+                                <h3 class="artist-card__name">Fanfare Comtoise</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Dimanche 28 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>13:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Gazebo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 4 - Template -->
+                        <div class="artist-card" data-index="3">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">BRASS BAND</span>
+                                <h3 class="artist-card__name">Trombone Brass Band</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Dimanche 28 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>15:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Grande scène</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 5 - Template -->
+                        <div class="artist-card" data-index="4">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">JAZZ</span>
+                                <h3 class="artist-card__name">Jazz Super Mara Band</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Dimanche 28 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>17:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Gazebo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 6 - Template -->
+                        <div class="artist-card" data-index="5">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">FUNK</span>
+                                <h3 class="artist-card__name">Lucky Chops</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Lundi 29 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>20:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Grande scène</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 7 - Template -->
+                        <div class="artist-card" data-index="6">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">BRASS BAND</span>
+                                <h3 class="artist-card__name">Bagel Brass</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Lundi 29 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>16:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Gazebo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 8 - Template -->
+                        <div class="artist-card" data-index="7">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">JAZZ</span>
+                                <h3 class="artist-card__name">Tuba Skinny</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Lundi 29 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>14:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Scène de proximité</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist Card 9 - Template -->
+                        <div class="artist-card" data-index="8">
+                            <div class="artist-card__background"></div>
+                            <div class="artist-card__content">
+                                <span class="artist-card__genre">FANFARE</span>
+                                <h3 class="artist-card__name">Balkys</h3>
+                                <div class="artist-card__info">
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/calendrier.svg" alt="Date">
+                                        <span>Lundi 29 juin</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/horloge.svg" alt="Heure">
+                                        <span>18:00</span>
+                                    </div>
+                                    <div class="artist-card__detail">
+                                        <img src="assets/icons/location.svg" alt="Lieu">
+                                        <span>Scène de proximité</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow--next" aria-label="Artiste suivant">
+                    <span>&gt;</span>
+                </button>
+
+                <!-- Pagination Dots -->
+                <div class="carousel-pagination">
+                    <button class="carousel-dot carousel-dot--active" data-index="0" aria-label="Aller à l'artiste 1"></button>
+                    <button class="carousel-dot" data-index="1" aria-label="Aller à l'artiste 2"></button>
+                    <button class="carousel-dot" data-index="2" aria-label="Aller à l'artiste 3"></button>
+                    <button class="carousel-dot" data-index="3" aria-label="Aller à l'artiste 4"></button>
+                    <button class="carousel-dot" data-index="4" aria-label="Aller à l'artiste 5"></button>
+                    <button class="carousel-dot" data-index="5" aria-label="Aller à l'artiste 6"></button>
+                    <button class="carousel-dot" data-index="6" aria-label="Aller à l'artiste 7"></button>
+                    <button class="carousel-dot" data-index="7" aria-label="Aller à l'artiste 8"></button>
+                    <button class="carousel-dot" data-index="8" aria-label="Aller à l'artiste 9"></button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <div class="footer__sub">Festival gratuit de fanfare et jazz à montbéliard</div>
+            <div class="footer__section">
+            </div>
+            <div class="footer__sectionTitle">NAVIGATION</div>
+            <div class="footer__navlinks">
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="festival.html">Le festival</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                    <li><a href="#scenes">Scènes</a></li>
+                    <li><a href="#infos">Infos pratiques</a></li>
+                </ul>
+            </div>
+            <div class="footer__contactTitle">CONTACT</div>
+            <div class="footer__contactlinks">
+                <ul>
+                    <li><a href="mailto:contact@fanfacomtoise.fr">Contact@fanfacomtoise.fr</a></li>
+                    <li><a href="https://share.google/02XjEhGVNjn2FSbxy">montbéliard,france</a></li>
+                    <li><a href="calendarlink">27, 28, 29 juin 2026</a></li>
+                    <li>Entrée gratuite</li>
+                    <li>Tous publics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Fanfa Comtoise - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/artistes.js"></script>
+</body>
+</html>

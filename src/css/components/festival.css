@@ -36,13 +36,16 @@
 }
 
 .historique-section__content p {
-  font-family: 'Open Sans', sans-serif;
-  color: var(--dark-gray);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
+  font-family: "Bebas Neue";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
 }
 
+.highlight {
+  color: #0FA4D4;
+  font-weight: 200;
+}
 .historique-image {
   width: 100%;
   margin: 2rem 0;
@@ -102,11 +105,6 @@
   color: var(--white);
 }
 
-.team-card__icon svg {
-  width: 50px;
-  height: 50px;
-}
-
 .team-card__name {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
@@ -122,38 +120,13 @@
   line-height: 1.6;
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
+  font-family: var(--font-family-Bebas-Neue, "Bebas Neue");
+  font-size: var(--font-size-texte-m, 1rem);
+  font-style: normal;
+  font-weight: 200;
 }
 
-.team-card__button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-yellow));
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: var(--white);
-}
 
-.team-card__button svg {
-  width: 24px;
-  height: 24px;
-}
-
-.team-card__button:hover {
-  transform: scale(1.1) rotate(90deg);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
-}
-
-.team-card__button:active {
-  transform: scale(0.95);
-}
-
-/* Valeurs Section */
 .valeurs-section {
   padding: 3rem 1.5rem;
   max-width: 440px;
@@ -199,14 +172,8 @@
   transition: all 0.3s ease;
 }
 
-.valeur-card:hover .valeur-card__icon {
-  background: var(--primary-red);
-  color: var(--white);
-  transform: scale(1.1);
-}
-
-.valeur-card__icon svg {
-  width: 40px;
+.valeur-card__icon svg,
+.valeur-card__icon img {
   height: 40px;
 }
 
@@ -224,6 +191,9 @@
   color: var(--dark-gray);
   line-height: 1.6;
   font-size: 0.95rem;
+  font-family: var(--font-family-Bebas-Neue, "Bebas Neue");
+  font-size: var(--font-size-texte-m, 1rem);
+  
 }
 
 /* Responsive */
