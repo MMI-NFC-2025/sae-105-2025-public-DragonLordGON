@@ -38,6 +38,7 @@
   font-size: var(--font-size-card-title);
   color: var(--primary-red);
   margin-bottom: 0.5rem;
+  font-weight: 200;
 }
 
 .date-card__subtext {
@@ -57,7 +58,7 @@
   font-weight: 400;
   font-size: var(--font-size-texte-m);
   color: #0FA4D4;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 /* Discovery Section */

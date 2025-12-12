@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="Mode 1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Festival - FANFA COMTOISE</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/fanfa.svg" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Fanfa comtoise" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+
+    <nav class="menu" id="mobileMenu">
+        <div class="menu__content">
+            <div class="menu__header">
+                <div class="menu__logo">
+                    <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+                </div>
+                <button class="menu__close" aria-label="Fermer le menu">
+                    <span>&times;</span>
+                </button>
+            </div>
+            
+            <ul class="menu__nav">
+                <li><a href="index.html" class="menu__link">Accueil</a></li>
+                <li><a href="festival.html" class="menu__link">Le festival</a></li>
+                <li><a href="#programme" class="menu__link">Programme</a></li>
+                <li><a href="#artistes" class="menu__link">Artistes</a></li>
+                <li><a href="#scenes" class="menu__link">Scènes</a></li>
+                <li><a href="#infos" class="menu__link">Infos pratiques</a></li>
+                <li><a href="#contact" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu__footer">
+            <p class="menu__dates">27, 28, 29 juin 2025</p>
+            <p class="menu__location">Montbéliard - Entrée gratuite</p>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="festival-hero">
+            <div class="festival-hero__content">
+                <h1 class="festival-hero__title">Le Festival</h1>
+            </div>
+        </section>
+
+
+        <section class="historique-section">
+            <h2 class="historique-section__title">Historique</h2>
+            <div class="historique-section__content">
+                <p>Cette année, Fanfa Comtoise fête sa 15e édition ! Le festival a vu le jour en 2010 grâce à l'initiative de Montbéliard qui ont voulu créer un événement musical accessible à tous.</p>
+                
+                <div class="historique-image">
+                    <img src="assets/img/placeholder img.webp" alt="Historique du festival">
+                </div>
+
+                <p>Ce qui a commencé comme un petit rassemblement local est rapidement devenu l'un des événements musicaux les plus attendus de la région. Chaque année, le festival se développe et accueille des fanfares internationales, offrant ainsi une scène internationale pour tous offrir des spectacles de qualité exceptionnelle.</p>
+
+                <p>Fanfa Comtoise est devenu synonyme d'excellence musicale, de convivialité et d'accessibilité. Notre vision est de continuer à offrir des spectacles captivants, gratuits pour tous, reflétant ainsi l'esprit d'ouverture et d'engagement communautaire qui caractérise Montbéliard depuis sa création.</p>
+            </div>
+        </section>
+
+
+        <section class="equipe-section">
+            <h2 class="equipe-section__title">L'équipe</h2>
+            
+            <div class="team-card">
+                <div class="team-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="team-card__name">Marie Dubois</h3>
+                <p class="team-card__description">Marie a fondé le festival en 2010 et dirige l'équipe avec passion depuis plus de 15 ans.</p>
+                <button class="team-card__button" data-member="marie">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="team-card__name">Pierre Martin</h3>
+                <p class="team-card__description">Pierre est directeur des opérations et de la scène internationale pour nous offrir des artistes de programme tout au long de l'année.</p>
+                <button class="team-card__button" data-member="pierre">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="team-card__name">Sophie Bernard</h3>
+                <p class="team-card__description">Sophie orchestre toute la logistique du festival, avec une efficacité remarquable.</p>
+                <button class="team-card__button" data-member="sophie">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="team-card__name">Lucas Bernard</h3>
+                <p class="team-card__description">Lucas assure la qualité sonore et visuelle de tous les spectacles du festival.</p>
+                <button class="team-card__button" data-member="lucas">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+
+        <section class="valeurs-section">
+            <h2 class="valeurs-section__title">Nos valeurs</h2>
+
+            <div class="valeur-card">
+                <div class="valeur-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="17" cy="17" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 7h7M4 17h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="valeur-card__title">Accessibilité</h3>
+                <p class="valeur-card__description">Nous créons des moments de rencontre et d'échange entre artistes et spectateurs, dans une atmosphère chaleureuse et accessible à tous.</p>
+            </div>
+
+            <div class="valeur-card">
+                <div class="valeur-card__icon">
+                    <img>
+                </div>
+                <h3 class="valeur-card__title">Excellence</h3>
+                <p class="valeur-card__description">Nous sélectionnons les meilleurs artistes de la scène internationale pour nous offrir des spectacles de qualité exceptionnelle.</p>
+            </div>
+
+            <div class="valeur-card">
+                <div class="valeur-card__icon">
+                    <img src="assets/icons/likeorange.svg" alt="Convivialité">
+                </div>
+                <h3 class="valeur-card__title">Convivialité</h3>
+                <p class="valeur-card__description">L'esprit festif et convivial du festival fait de lui un événement unique dans la région, dans une ambiance où on peut tous se retrouver.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <div class="footer__sub">Festival gratuit fanfare et jazz</div>
+            
+            <div class="footer__section">
+                <h3 class="footer__sectionTitle">Informations</h3>
+                <div class="footer__navlinks">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="festival.html">Le festival</a></li>
+                        <li><a href="#programme">Programmes</a></li>
+                        <li><a href="#artistes">Artistes</a></li>
+                        <li><a href="#scenes">Scènes</a></li>
+                        <li><a href="#infos">Infos pratiques</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__contactTitle">Contact</h3>
+                <div class="footer__contactlinks">
+                    <ul>
+                        <li><a href="mailto:contact@fanfacomtoise.fr">Contact@fanfacomtoise.fr</a></li>
+                        <li><a href="tel:+33612345678">+33 6 12 34 56 78</a></li>
+                        <li>Mentions légales</li>
+                        <li>Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Fanfa Comtoise - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

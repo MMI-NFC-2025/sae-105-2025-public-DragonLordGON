@@ -1,0 +1,244 @@
+/* Festival Page Styles */
+
+/* Hero Section */
+.festival-hero {
+  background: var(--hero-gradient);
+  padding: 6rem 1.5rem 3rem;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.festival-hero__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+/* Historique Section */
+.historique-section {
+  padding: 3rem 1.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--beige);
+}
+
+.historique-section__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.historique-section__content p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.historique-image {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.historique-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Équipe Section */
+.equipe-section {
+  padding: 3rem 1.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--beige);
+}
+
+.equipe-section__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.team-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-yellow));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.team-card__icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.team-card__name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.team-card__description {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-card__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-yellow));
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--white);
+}
+
+.team-card__button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.team-card__button:hover {
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+}
+
+.team-card__button:active {
+  transform: scale(0.95);
+}
+
+/* Valeurs Section */
+.valeurs-section {
+  padding: 3rem 1.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--beige);
+}
+
+.valeurs-section__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.valeur-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.valeur-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.valeur-card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border: 3px solid var(--primary-red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-red);
+  transition: all 0.3s ease;
+}
+
+.valeur-card:hover .valeur-card__icon {
+  background: var(--primary-red);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.valeur-card__icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.valeur-card__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.valeur-card__description {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .festival-hero {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .festival-hero__title {
+    font-size: 2.5rem;
+  }
+
+  .historique-section,
+  .equipe-section,
+  .valeurs-section {
+    padding: 2rem 1rem;
+  }
+}
