@@ -93,3 +93,13 @@
     box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.10);
   }
 }
+
+.infos-hero::before,
+.contact-hero::before {
+    content: none;
+}
+
+.infos-hero,
+.contact-hero {
+    background: var(--hero-gradient);
+}

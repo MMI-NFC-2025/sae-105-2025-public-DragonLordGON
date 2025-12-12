@@ -1,6 +1,3 @@
-/* ============================================
-   INFOS PRATIQUES - HERO SECTION
-   ============================================ */
 
 .infos-hero {
     background: var(--hero-gradient);
@@ -40,9 +37,6 @@
     letter-spacing: 2px;
 }
 
-/* ============================================
-   INFOS PRATIQUES - SECTIONS
-   ============================================ */
 
 .infos-section {
     padding: 2rem 1.5rem;
@@ -67,9 +61,6 @@
     letter-spacing: 1px;
 }
 
-/* ============================================
-   INFOS CARD
-   ============================================ */
 
 .infos-card {
     background-color: var(--white);
@@ -170,10 +161,15 @@
 
 .infos-card__subsection {
     margin-bottom: 2rem;
+    font-family: "Bebas Neue";
+    flex-direction: column;
+    
 }
 
 .infos-card__subsection:last-child {
     margin-bottom: 0;
+    font-family: "Bebas Neue";
+    
 }
 
 .infos-card__subsection-header {
@@ -198,9 +194,16 @@
     color: var(--primary-red);
 }
 
-/* ============================================
-   FAQ SECTION
-   ============================================ */
+.social-link img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+}
+
+.contact-card__icon img {
+     object-fit: contain;
+}
+
 
 .faq {
     display: flex;
@@ -271,9 +274,7 @@
     margin: 0;
 }
 
-/* ============================================
-   RESPONSIVE - TABLET AND DESKTOP
-   ============================================ */
+
 
 @media (min-width: 768px) {
     .infos-hero {
