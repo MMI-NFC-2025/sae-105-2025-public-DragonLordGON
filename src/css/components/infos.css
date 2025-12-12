@@ -1,0 +1,344 @@
+/* ============================================
+   INFOS PRATIQUES - HERO SECTION
+   ============================================ */
+
+.infos-hero {
+    background: var(--hero-gradient);
+    padding: 6rem 1.5rem 3rem;
+    margin-top: 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.infos-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('../../../assets/icons/info.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.infos-hero__content {
+    position: relative;
+    z-index: 1;
+}
+
+.infos-hero__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* ============================================
+   INFOS PRATIQUES - SECTIONS
+   ============================================ */
+
+.infos-section {
+    padding: 2rem 1.5rem;
+    background-color: var(--beige);
+}
+
+.infos-section--faq {
+    padding: 3rem 1.5rem;
+}
+
+.infos-section__container {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.infos-section__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: var(--primary-orange);
+    text-align: center;
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   INFOS CARD
+   ============================================ */
+
+.infos-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-orange);
+}
+
+.infos-card__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.infos-card__icon img {
+    width: 50px;
+    height: 50px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.infos-card__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-red);
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 1px;
+}
+
+.infos-card__content {
+    margin-bottom: 1.5rem;
+}
+
+.infos-card__content:last-child {
+    margin-bottom: 0;
+}
+
+.infos-card__content--highlight {
+    background-color: var(--primary-orange);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.infos-card__content--highlight .infos-card__subtitle {
+    color: var(--white);
+}
+
+.infos-card__content--highlight .infos-card__text {
+    color: var(--white);
+}
+
+.infos-card__subtitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    margin: 0 0 1rem 0;
+    letter-spacing: 1px;
+}
+
+.infos-card__text {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+}
+
+.infos-card__text:last-child {
+    margin-bottom: 0;
+}
+
+.infos-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.infos-card__list li {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.infos-card__list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-orange);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.infos-card__subsection {
+    margin-bottom: 2rem;
+}
+
+.infos-card__subsection:last-child {
+    margin-bottom: 0;
+}
+
+.infos-card__subsection-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-yellow);
+    border-radius: 8px;
+}
+
+.infos-card__subsection-header img {
+    width: 30px;
+    height: 30px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.infos-card__subsection-header .infos-card__subtitle {
+    margin: 0;
+    color: var(--primary-red);
+}
+
+/* ============================================
+   FAQ SECTION
+   ============================================ */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background-color: var(--white);
+    border: 2px solid var(--primary-orange);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-item__question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item__question:hover {
+    background-color: rgba(255, 107, 53, 0.1);
+}
+
+.faq-item__question span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.125rem;
+    color: var(--primary-red);
+    letter-spacing: 0.5px;
+}
+
+.faq-item__arrow {
+    width: 20px;
+    height: 20px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.is-open .faq-item__arrow {
+    transform: rotate(180deg);
+}
+
+.faq-item__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.is-open .faq-item__answer {
+    max-height: 500px;
+    padding: 0 1.5rem 1.25rem;
+}
+
+.faq-item__answer p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET AND DESKTOP
+   ============================================ */
+
+@media (min-width: 768px) {
+    .infos-hero {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .infos-hero__title {
+        font-size: 4rem;
+    }
+
+    .infos-hero::before {
+        width: 400px;
+        height: 400px;
+    }
+
+    .infos-section {
+        padding: 3rem 2rem;
+    }
+
+    .infos-section--faq {
+        padding: 4rem 2rem;
+    }
+
+    .infos-section__container {
+        max-width: 800px;
+    }
+
+    .infos-section__title {
+        font-size: 2.5rem;
+    }
+
+    .infos-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .infos-card__icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .infos-card__title {
+        font-size: 2rem;
+    }
+
+    .infos-card__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .infos-card__text {
+        font-size: 1.125rem;
+    }
+
+    .infos-card__list li {
+        font-size: 1.125rem;
+    }
+
+    .faq-item__question span {
+        font-size: 1.25rem;
+    }
+
+    .faq-item__answer p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .infos-section__container {
+        max-width: 1000px;
+    }
+}

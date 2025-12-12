@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="Mode 1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FANFA COMTOISE</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/fanfa.svg" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Fanfa comtoise" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!--Menu-->
+    <nav class="menu" id="mobileMenu">
+        <div class="menu__content">
+            <div class="menu__header">
+                <div class="menu__logo">
+                    <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+                </div>
+                <button class="menu__close" aria-label="Fermer le menu">
+                    <span>&times;</span>
+                </button>
+            </div>
+            
+            <ul class="menu__nav">
+                <li><a href="index.html" class="menu__link">Accueil</a></li>
+                <li><a href="festival.html" class="menu__link">Le festival</a></li>
+                <li><a href="programme.html" class="menu__link">Programme</a></li>
+                <li><a href="artistes.html" class="menu__link">Artistes</a></li>
+                <li><a href="scenes.html" class="menu__link">Scènes</a></li>
+                <li><a href="infos-pratiques.html" class="menu__link">Infos pratiques</a></li>
+                <li><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu__footer">
+            <p class="menu__dates">27, 28, 29 juin 2025</p>
+            <p class="menu__location">Montbéliard - Entrée gratuite</p>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="contact-hero__content">
+                <h1 class="contact-hero__title">CONTACT</h1>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="contact-form-section__container">
+                <h2 class="contact-form-section__title">ENVOYEZ-NOUS UN MESSAGE</h2>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">NOM COMPLET</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">EMAIL</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">SUJET</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Sujet de votre message" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">MESSAGE</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Votre message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">ENVOYER</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact-info-section">
+            <div class="contact-info-section__container">
+                <h2 class="contact-info-section__title">NOS COORDONNÉES</h2>
+                
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-card__icon">
+                            <img src="assets/icons/mail.svg" alt="Email">
+                        </div>
+                        <div class="contact-card__content">
+                            <h3 class="contact-card__label">EMAIL</h3>
+                            <a href="mailto:contact@fanfacomtoise.fr" class="contact-card__link">contact@fanfacomtoise.fr</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon">
+                            <img src="assets/icons/phone.svg" alt="Téléphone">
+                        </div>
+                        <div class="contact-card__content">
+                            <h3 class="contact-card__label">TÉLÉPHONE</h3>
+                            <a href="tel:+33612345678" class="contact-card__link">+33 6 12 34 56 78</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon">
+                            <img src="assets/icons/location.svg" alt="Adresse">
+                        </div>
+                        <div class="contact-card__content">
+                            <h3 class="contact-card__label">ADRESSE</h3>
+                            <p class="contact-card__text">Place de l'Hôtel de Ville<br>25200 Montbéliard<br>France</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <div class="social-section__container">
+                <h2 class="social-section__title">SUIVEZ-NOUS</h2>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <img src="assets/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <img src="assets/icons/insta.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <div class="footer__sub">Festival gratuit de fanfare et jazz à montbéliard</div>
+            <div class="footer__section">
+            </div>
+            <div class="footer__sectionTitle">NAVIGATION</div>
+            <div class="footer__navlinks">
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="festival.html">Le festival</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                    <li><a href="scenes.html">Scènes</a></li>
+                    <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+                </ul>
+            </div>
+            <div class="footer__contactTitle">CONTACT</div>
+            <div class="footer__contactlinks">
+                <ul>
+                    <li><a href="mailto:contact@fanfacomtoise.fr">Contact@fanfacomtoise.fr</a></li>
+                    <li><a href="https://share.google/02XjEhGVNjn2FSbxy">montbéliard,france</a></li>
+                    <li><a href="calendarlink">27, 28, 29 juin 2026</a></li>
+                    <li>Entrée gratuite</li>
+                    <li>Tous publics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Fanfa Comtoise - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

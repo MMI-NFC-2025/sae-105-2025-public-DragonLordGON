@@ -1,0 +1,375 @@
+/* ============================================
+   CONTACT PAGE - HERO SECTION
+   ============================================ */
+
+.contact-hero {
+    background: var(--hero-gradient);
+    padding: 6rem 1.5rem 3rem;
+    margin-top: 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('../../../assets/icons/mail.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.contact-hero__content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hero__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* ============================================
+   CONTACT FORM SECTION
+   ============================================ */
+
+.contact-form-section {
+    padding: 3rem 1.5rem;
+    background-color: var(--beige);
+}
+
+.contact-form-section__container {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.contact-form-section__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-red);
+    text-align: left;
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-yellow);
+    letter-spacing: 1px;
+}
+
+.form-input,
+.form-textarea {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--primary-orange);
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #aaa;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-submit {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.form-submit:hover {
+    background-color: var(--primary-red);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   CONTACT INFO SECTION
+   ============================================ */
+
+.contact-info-section {
+    padding: 2rem 1.5rem;
+    background-color: var(--beige);
+}
+
+.contact-info-section__container {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.contact-info-section__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-red);
+    text-align: left;
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background-color: var(--white);
+    border: 2px solid var(--secondary-yellow);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card__icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card__icon img {
+    width: 100%;
+    height: 100%;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.contact-card__content {
+    flex: 1;
+}
+
+.contact-card__label {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--primary-orange);
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 1px;
+}
+
+.contact-card__link {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card__link:hover {
+    color: var(--primary-orange);
+}
+
+.contact-card__text {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================
+   SOCIAL MEDIA SECTION
+   ============================================ */
+
+.social-section {
+    padding: 3rem 1.5rem;
+    background: var(--gradient-orange-to-yellow);
+    text-align: center;
+}
+
+.social-section__container {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.social-section__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-link {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+/* ============================================
+   RESPONSIVE - TABLET AND DESKTOP
+   ============================================ */
+
+@media (min-width: 768px) {
+    .contact-hero {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .contact-hero__title {
+        font-size: 4rem;
+    }
+
+    .contact-hero::before {
+        width: 400px;
+        height: 400px;
+    }
+
+    .contact-form-section {
+        padding: 4rem 2rem;
+    }
+
+    .contact-form-section__container {
+        max-width: 600px;
+    }
+
+    .contact-form-section__title {
+        font-size: 2rem;
+    }
+
+    .form-label {
+        font-size: 1.125rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 1.125rem;
+        padding: 1.25rem;
+    }
+
+    .form-submit {
+        font-size: 1.5rem;
+    }
+
+    .contact-info-section {
+        padding: 3rem 2rem;
+    }
+
+    .contact-info-section__container {
+        max-width: 800px;
+    }
+
+    .contact-info-section__title {
+        font-size: 2rem;
+    }
+
+    .contact-card {
+        padding: 2rem;
+    }
+
+    .contact-card__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-card__label {
+        font-size: 1.125rem;
+    }
+
+    .contact-card__link,
+    .contact-card__text {
+        font-size: 1.25rem;
+    }
+
+    .social-section {
+        padding: 4rem 2rem;
+    }
+
+    .social-section__title {
+        font-size: 2rem;
+    }
+
+    .social-link {
+        width: 80px;
+        height: 80px;
+    }
+
+    .social-link img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-info-section__container {
+        max-width: 1000px;
+    }
+}

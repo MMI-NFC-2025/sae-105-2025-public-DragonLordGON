@@ -1,12 +1,12 @@
-// Programme Page Filtering System
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Filter state
+
   const filters = {
     jour: 'all',
     scene: 'all'
   };
 
-  // DOM Elements
+
   const jourFilterBtn = document.getElementById('jourFilter');
   const sceneFilterBtn = document.getElementById('sceneFilter');
   const applyFiltersBtn = document.getElementById('applyFilters');
@@ -15,48 +15,45 @@ document.addEventListener('DOMContentLoaded', function() {
   const concertCards = document.querySelectorAll('.concert-card');
   const daySections = document.querySelectorAll('.day-section');
 
-  // Toggle dropdown visibility
+
   function toggleDropdown(dropdown) {
     const isActive = dropdown.classList.contains('active');
-    
-    // Close all dropdowns
+
     document.querySelectorAll('.filter-dropdown').forEach(d => {
       d.classList.remove('active');
     });
     
-    // Toggle current dropdown
+
     if (!isActive) {
       dropdown.classList.add('active');
     }
   }
 
-  // Handle filter selection
   function handleFilterSelection(event) {
     if (!event.target.classList.contains('filter-option')) return;
     
     const filterType = event.target.dataset.filter;
     const filterValue = event.target.dataset.value;
     
-    // Update filter state
+
     filters[filterType] = filterValue;
     
-    // Update selected state
+
     const dropdown = event.currentTarget;
     dropdown.querySelectorAll('.filter-option').forEach(option => {
       option.classList.remove('selected');
     });
     event.target.classList.add('selected');
-    
-    // Close dropdown
+
     dropdown.classList.remove('active');
   }
 
-  // Apply filters
+
   function applyFilters() {
     let visibleCount = 0;
     const dayVisibility = {};
 
-    // First pass: check which cards should be visible
+
     concertCards.forEach(card => {
       const cardDay = card.dataset.day;
       const cardScene = card.dataset.scene;
@@ -75,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // Second pass: show/hide day sections based on whether they have visible cards
+
     daySections.forEach(section => {
       const sectionDay = section.dataset.day;
       if (dayVisibility[sectionDay]) {
@@ -85,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // If no filters applied, show all sections
+ 
     if (filters.jour === 'all' && filters.scene === 'all') {
       daySections.forEach(section => {
         section.classList.remove('hidden');
@@ -93,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Event Listeners
+
   if (jourFilterBtn) {
     jourFilterBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -120,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     applyFiltersBtn.addEventListener('click', applyFilters);
   }
 
-  // Close dropdowns when clicking outside
+
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.filter-group')) {
       document.querySelectorAll('.filter-dropdown').forEach(dropdown => {
@@ -129,6 +126,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Initial state - show all cards
   applyFilters();
 });

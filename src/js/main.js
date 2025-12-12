@@ -40,13 +40,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Smooth scroll for buttons
+
   const buttons = document.querySelectorAll('.button');
   buttons.forEach(button => {
     button.addEventListener('click', function(e) {
       if (this.textContent.includes('Voir le programme')) {
         document.querySelector('.discovery-section').scrollIntoView({ behavior: 'smooth' });
       }
+    });
+  });
+
+
+  const scrollToTopBtn = document.createElement('button');
+  scrollToTopBtn.className = 'scroll-to-top';
+  scrollToTopBtn.setAttribute('aria-label', 'Retour en haut');
+  scrollToTopBtn.innerHTML = '<span>↑</span>';
+  document.body.appendChild(scrollToTopBtn);
+
+
+  function handleScrollToTop() {
+    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    
+    if (scrollPercentage > 20) {
+      scrollToTopBtn.classList.add('is-visible');
+    } else {
+      scrollToTopBtn.classList.remove('is-visible');
+    }
+  }
+
+  window.addEventListener('scroll', handleScrollToTop);
+
+
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
   });
 });
