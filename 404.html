@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="Mode 1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Non trouvée | FANFA COMTOISE</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </a>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="menu" id="mobileMenu">
+        <div class="menu__content">
+            <div class="menu__header">
+                <div class="menu__logo">
+                    <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+                </div>
+                <button class="menu__close" aria-label="Fermer le menu">
+                    <span>&times;</span>
+                </button>
+            </div>
+            
+            <ul class="menu__nav">
+                <li><a href="index.html" class="menu__link">Accueil</a></li>
+                <li><a href="festival.html" class="menu__link">Le festival</a></li>
+                <li><a href="programme.html" class="menu__link">Programme</a></li>
+                <li><a href="artistes.html" class="menu__link">Artistes</a></li>
+                <li><a href="scenes.html" class="menu__link">Scènes</a></li>
+                <li><a href="infos-pratiques.html" class="menu__link">Infos pratiques</a></li>
+                <li><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="error-hero">
+            <div class="error-hero__content">
+                <h1 class="error-hero__title">404</h1>
+                <p class="error-hero__subtitle">Page Non trouvée</p>
+            </div>
+        </section>
+
+        <section class="error-section">
+            <div class="error-section__container">
+                <div class="error-card">
+                    <div class="error-card__icon">
+                        <img src="assets/icons/info.svg" alt="Erreur" loading="lazy">
+                    </div>
+                    <h2 class="error-card__title">Oups ! Cette page n'existe pas</h2>
+                    <p class="error-card__description">
+                        La page que vous recherchez a peut-être été déplacée ou n'existe plus.
+                    </p>
+                    
+                    <div class="error-card__actions">
+                        <a href="index.html" class="btn btn--primary">Retour à l'accueil</a>
+                        <a href="programme.html" class="btn btn--secondary">Voir le programme</a>
+                    </div>
+
+                    <div class="error-card__search">
+                        <h3 class="error-card__search-title">Rechercher sur le site</h3>
+                        <form action="https://duckduckgo.com/" method="GET" 
+                            class="error-search-form"
+                            x-data="{ q:'' }" 
+                            x-on:submit="q = q + ' site:mmimontbeliard.com'">
+                            <label for="q" class="error-search-form__label">Texte à chercher :</label>
+                            <div class="error-search-form__group">
+                                <input type="text" id="q" name="q" x-model="q" 
+                                    class="error-search-form__input" 
+                                    placeholder="Rechercher...">
+                                <button type="submit" class="error-search-form__button">Rechercher</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="assets/icons/logofanfa.svg" alt="FANFA COMTOISE">
+            </div>
+            <div class="footer__sub">Festival gratuit de fanfare et jazz à montbéliard</div>
+            <div class="footer__section">
+            </div>
+            <div class="footer__sectionTitle">NAVIGATION</div>
+            <div class="footer__navlinks">
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="festival.html">Le festival</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                    <li><a href="scenes.html">Scènes</a></li>
+                    <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+                </ul>
+            </div>
+            <div class="footer__contactTitle">CONTACT</div>
+            <div class="footer__contactlinks">
+                <ul>
+                    <li><a href="mailto:contact@fanfacomtoise.fr">Contact@fanfacomtoise.fr</a></li>
+                    <li><a href="https://share.google/02XjEhGVNjn2FSbxy">montbéliard,france</a></li>
+                    <li><a href="calendarlink">27, 28, 29 juin 2026</a></li>
+                    <li>Entrée gratuite</li>
+                    <li>Tous publics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Fanfa Comtoise - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" aria-label="Retour en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

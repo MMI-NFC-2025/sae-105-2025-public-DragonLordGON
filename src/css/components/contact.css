@@ -1,6 +1,3 @@
-/* ============================================
-   CONTACT PAGE - HERO SECTION
-   ============================================ */
 
 .contact-hero {
     background: var(--hero-gradient);
@@ -24,9 +21,6 @@
     letter-spacing: 2px;
 }
 
-/* ============================================
-   CONTACT FORM SECTION
-   ============================================ */
 
 .contact-form-section {
     padding: 3rem 1.5rem;
@@ -47,7 +41,6 @@
     letter-spacing: 1px;
 }
 
-/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -115,9 +108,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* ============================================
-   CONTACT INFO SECTION
-   ============================================ */
 
 .contact-info-section {
     padding: 2rem 1.5rem;
@@ -207,9 +197,6 @@
     margin: 0;
 }
 
-/* ============================================
-   SOCIAL MEDIA SECTION
-   ============================================ */
 
 .social-section {
     padding: 3rem 1.5rem;
@@ -259,9 +246,6 @@
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
-/* ============================================
-   RESPONSIVE - TABLET AND DESKTOP
-   ============================================ */
 
 @media (min-width: 768px) {
     .contact-hero {

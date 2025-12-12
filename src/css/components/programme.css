@@ -1,6 +1,4 @@
-/* Programme Page Styles */
 
-/* Hero Section */
 .programme-hero {
   background: var(--hero-gradient);
   padding: 6rem 1.5rem 3rem;
@@ -17,7 +15,7 @@
   margin: 0;
 }
 
-/* Filters Section */
+
 .filters-section {
   padding: 2rem 1.5rem;
   max-width: 440px;
@@ -146,7 +144,7 @@
   color: var(--white);
 }
 
-/* Programme Content */
+
 .programme-content {
   padding: 2rem 1.5rem;
   max-width: 440px;
@@ -160,7 +158,6 @@
   gap: 2rem;
 }
 
-/* Day Section */
 .day-section {
   transition: all 0.3s ease;
 }
@@ -179,7 +176,6 @@
   text-align: center;
 }
 
-/* Concert Card */
 .concert-card {
   background: var(--white);
   border-radius: 12px;
@@ -253,7 +249,6 @@
   letter-spacing: 0.05em;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .programme-hero {
     padding: 5rem 1rem 2rem;
@@ -273,7 +268,6 @@
   }
 }
 
-/* Animation for filtered items */
 @keyframes fadeIn {
   from {
     opacity: 0;

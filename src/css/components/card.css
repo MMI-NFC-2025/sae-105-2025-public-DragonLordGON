@@ -61,7 +61,6 @@
   font-weight: 200;
 }
 
-/* Discovery Section */
 .discovery-section {
   padding: 3rem 1.5rem 2rem;
   max-width: 440px;
@@ -133,7 +132,6 @@
   color: var(--carddesc-color);
 }
 
-/* Reservation Section */
 .reservation-section {
   background: var(--gradient-orange-to-yellow);
   padding: 3rem 1.5rem;

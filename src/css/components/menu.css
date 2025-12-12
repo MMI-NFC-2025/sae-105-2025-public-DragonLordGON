@@ -1,4 +1,4 @@
-/* Mobile Menu Overlay */
+
 .menu {
   position: fixed;
   top: 0;
@@ -180,12 +180,12 @@
   }
 }
 
-/* Prevent body scroll when menu is open */
+
 body.menu-open {
   overflow: hidden;
 }
 
-/* Responsive spacing based on viewport height */
+
 @media (max-height: 800px) {
   .menu__nav {
     gap: 1rem;

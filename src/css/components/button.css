@@ -1,4 +1,4 @@
-/* Button Component */
+
 .button {
   padding: 0.8rem 2.2rem;
   border: none;
@@ -96,7 +96,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* Carousel */
 .carousel {
     position: relative;
     width: 100%;

@@ -6,7 +6,7 @@
 - NOM : HENRY
 - PRÉNOM : MERLIN
 - GROUPE : A1
-- URL du site : https://fanacomtoise.netlify.app/
+- URL du site : https://fanacomtoise.netlify.app/ ou fanfacomtoise.merlinhenry.fr
 - URL FIGMA : password : marvel-yearn-people-most   link : https://www.figma.com/design/8XpjZuwWMszmjLCeE22X72/template-site-jazz?node-id=16-1916&t=kA5FZUMe2FzCyn6p-1
 
 ## Sujet

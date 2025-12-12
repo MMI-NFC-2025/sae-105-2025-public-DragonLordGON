@@ -1,6 +1,4 @@
-/* Festival Page Styles */
 
-/* Hero Section */
 .festival-hero {
   background: var(--hero-gradient);
   padding: 6rem 1.5rem 3rem;
@@ -17,7 +15,6 @@
   margin: 0;
 }
 
-/* Historique Section */
 .historique-section {
   padding: 3rem 1.5rem;
   max-width: 440px;
@@ -59,7 +56,6 @@
   display: block;
 }
 
-/* Équipe Section */
 .equipe-section {
   padding: 3rem 1.5rem;
   max-width: 440px;
@@ -196,7 +192,6 @@
   
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .festival-hero {
     padding: 5rem 1rem 2rem;
