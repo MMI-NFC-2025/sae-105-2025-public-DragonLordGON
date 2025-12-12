@@ -1,0 +1,319 @@
+/* ============================================
+   SCENES PAGE - HERO SECTION
+   ============================================ */
+
+.scenes-hero {
+    background: var(--hero-gradient);
+    padding: 6rem 1.5rem 3rem;
+    margin-top: 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.scenes-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('../../../assets/icons/location.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.scenes-hero__content {
+    position: relative;
+    z-index: 1;
+}
+
+.scenes-hero__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* ============================================
+   SCENES PAGE - INTRO SECTION
+   ============================================ */
+
+.scenes-intro {
+    padding: 3rem 1.5rem;
+    background-color: var(--beige);
+}
+
+.scenes-intro__container {
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scenes-intro__text {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ============================================
+   SCENES PAGE - CONTENT SECTION
+   ============================================ */
+
+.scenes-content {
+    padding: 2rem 1.5rem 3rem;
+    background-color: var(--beige);
+}
+
+.scenes-content__container {
+    max-width: 440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Scene Card */
+.scene-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.scene-card__header {
+    background: var(--gradient-orange-to-yellow);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.scene-card__header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-image: url('../../../assets/icons/location.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.scene-card__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 0 1rem 0;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.scene-card__btn {
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.scene-card__btn:hover {
+    background-color: var(--primary-red);
+    transform: translateY(-2px);
+}
+
+.scene-card__btn img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.scene-card__content {
+    padding: 2rem 1.5rem;
+}
+
+.scene-card__description {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+
+/* Scene Features */
+.scene-card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.scene-card__features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+.scene-card__features img {
+    width: 24px;
+    height: 24px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+/* Scene Schedule */
+.scene-card__schedule {
+    margin-bottom: 1.5rem;
+}
+
+.scene-card__schedule-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    margin: 0 0 1rem 0;
+    letter-spacing: 1px;
+}
+
+.scene-card__concert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.scene-card__concert:last-child {
+    border-bottom: none;
+}
+
+.scene-card__concert-name {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    color: var(--primary-red);
+    flex: 1;
+}
+
+.scene-card__concert-time {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 0.875rem;
+    color: var(--primary-orange);
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.scene-card__link {
+    width: 100%;
+    background-color: transparent;
+    color: var(--primary-orange);
+    border: 2px solid var(--primary-orange);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.scene-card__link:hover {
+    background-color: var(--primary-orange);
+    color: var(--white);
+}
+
+/* ============================================
+   RESPONSIVE - TABLET AND DESKTOP
+   ============================================ */
+
+@media (min-width: 768px) {
+    .scenes-hero {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .scenes-hero__title {
+        font-size: 4rem;
+    }
+
+    .scenes-hero::before {
+        width: 400px;
+        height: 400px;
+    }
+
+    .scenes-intro {
+        padding: 4rem 2rem;
+    }
+
+    .scenes-intro__text {
+        font-size: 1.5rem;
+    }
+
+    .scenes-content {
+        padding: 3rem 2rem 4rem;
+    }
+
+    .scenes-content__container {
+        max-width: 800px;
+    }
+
+    .scene-card__header {
+        padding: 2.5rem 2rem;
+    }
+
+    .scene-card__title {
+        font-size: 2.5rem;
+    }
+
+    .scene-card__content {
+        padding: 2.5rem 2rem;
+    }
+
+    .scene-card__description {
+        font-size: 1.125rem;
+    }
+
+    .scene-card__features li {
+        font-size: 1.125rem;
+    }
+
+    .scene-card__concert-name {
+        font-size: 1.125rem;
+    }
+
+    .scene-card__concert-time {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .scenes-content__container {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
