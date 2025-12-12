@@ -11,21 +11,7 @@
     overflow: hidden;
 }
 
-.artistes-hero::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
-    background-image: url('../../../assets/icons/note.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.2;
-    pointer-events: none;
-}
+
 
 .artistes-hero__content {
     position: relative;
@@ -103,24 +89,14 @@
 
 .artist-card__background {
     height: 250px;
-    background: var(--gradient-orange-to-yellow);
     position: relative;
     overflow: hidden;
 }
 
-.artist-card__background::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    background-image: url('../../../assets/icons/note.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.3;
+.artist-card__background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .artist-card__content {

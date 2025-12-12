@@ -74,6 +74,7 @@
 .filter-btn img {
   width: 20px;
   height: 20px;
+  object-fit: contain;
 }
 
 .filter-btn:hover {

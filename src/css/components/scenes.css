@@ -1,6 +1,4 @@
-/* ============================================
-   SCENES PAGE - HERO SECTION
-   ============================================ */
+
 
 .scenes-hero {
     background: var(--hero-gradient);
@@ -40,9 +38,7 @@
     letter-spacing: 2px;
 }
 
-/* ============================================
-   SCENES PAGE - INTRO SECTION
-   ============================================ */
+
 
 .scenes-intro {
     padding: 3rem 1.5rem;
@@ -63,9 +59,7 @@
     line-height: 1.5;
 }
 
-/* ============================================
-   SCENES PAGE - CONTENT SECTION
-   ============================================ */
+
 
 .scenes-content {
     padding: 2rem 1.5rem 3rem;
@@ -80,7 +74,6 @@
     gap: 2rem;
 }
 
-/* Scene Card */
 .scene-card {
     background-color: var(--white);
     border-radius: 12px;
@@ -162,7 +155,7 @@
     margin: 0 0 1.5rem 0;
 }
 
-/* Scene Features */
+
 .scene-card__features {
     list-style: none;
     padding: 0;
@@ -187,7 +180,7 @@
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
-/* Scene Schedule */
+
 .scene-card__schedule {
     margin-bottom: 1.5rem;
 }
@@ -246,9 +239,7 @@
     color: var(--white);
 }
 
-/* ============================================
-   RESPONSIVE - TABLET AND DESKTOP
-   ============================================ */
+
 
 @media (min-width: 768px) {
     .scenes-hero {
